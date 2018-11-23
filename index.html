@@ -16,6 +16,10 @@
 
   <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
   <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -27,12 +31,114 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-    Theme Name: BizPage
-    Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+
+  <!--Style Customize for Video-->
+  <style>
+.overlay-custom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}    
+
+.video-area-custom .video-wrap-custom {
+  background-position: center center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  height: 100%;
+  position: relative;
+  box-shadow: 0.872px 9.962px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+  .video-area-custom .video-wrap-custom {
+    height: 300px;
+  }
+}
+
+.video-area-custom .video-wrap-custom .play-btn-custom {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-area-custom .video-content-custom {
+  padding: 60px 60px 60px 30px;
+}
+
+@media (max-width: 991px) {
+  .video-area-custom .video-content-custom {
+    padding: 30px 0;
+  }
+}
+
+.video-area-custom .video-content-custom h3 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+@media (max-width: 991px) {
+  .video-area-custom .video-content-custom h3 br {
+    display: none;
+  }
+}
+
+.video-area-custom .video-content-custom p {
+  margin-bottom: 0px;
+}
+
+.section-gap-custom {
+  padding: 120px 0;
+}
+
+.container-video-custom {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container-video-custom {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-video-custom {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container-video-custom {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-video-custom {
+    max-width: 1140px;
+  }
+}
+
+.container-video-custom-fluid {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.text-white {
+  color: #fff !important;
+}
+  </style>
 </head>
 
 <body>
@@ -40,7 +146,7 @@
   <!--==========================
     Header
   ============================-->
-  <header id="header">
+  <header id="header" style="background-color: white;height: 130px;">
     <div class="container-fluid">
 
       <div id="logo" class="pull-left">
@@ -48,36 +154,48 @@
         <a href="#intro"><img src="img/logo_pink.png" alt="" title="" /></a>
       </div>
 
-      <nav id="nav-menu-container">
+      <nav id="nav-menu-container" style="margin-top: 1%;">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">What we do</a>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Work at BnBContinental</a></li>
-              <li><a href="#">Media</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">News</a></li>
+              <li><a href="#" style="color: black;">About Us</a></li>
+              <li><a href="#" style="color: black;">Work at BnBContinental</a></li>
+              <li><a href="#" style="color: black;">Media</a></li>
+              <li><a href="#" style="color: black;">Blog</a></li>
+              <li><a href="#" style="color: black;">News</a></li>
             </ul>          
           </li>
 
-          <li><a href="#">Pricing</a>
+          <li><a href="#" style="color: black;">Pricing</a>
             <ul>
-              <li><a href="#call-to-action">Fee Structure from 15%</a></li>
-              <li><a href="#call-to-action">Guaranteed Monthly Rent</a></li>
+              <li><a href="#call-to-action" style="color: black;">Fee Structure from 15%</a></li>
+              <li><a href="#call-to-action" style="color: black;">Guaranteed Monthly Rent</a></li>
             </ul>          
           </li>
 
-          <li><a href="#">List Your Property</a>
+          <li><a href="#" style="color: black;">List Your Property</a>
             <ul>
-              <li><a href="#">Owner Login</a></li>
-              <li><a href="#">New Host Sign up</a></li>
+              <li><a href="#" style="color: black;">Owner Login</a></li>
+              <li><a href="#" style="color: black;">New Host Sign up</a></li>
             </ul>          
           </li>
 
-          <li><a href="#">Partnership</a></li>
+          <li><a href="#" style="color: black;">Partnership</a></li>
 
-          <li><a href="#">Book Now</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#" style="color: black;">Book Now</a></li>
+          <li><a href="#" style="color: black;">Contact</a></li>
+
+          <li><a href="#" style="color:#fa081c;">Languages</a>
+            <ul>
+              <li><a href="#" style="color: black;"><img src="./img/language-flags/national-flag-uk.png">&nbsp;UK</a></li>
+              <li><a href="#" style="color: black;"><img src="./img/language-flags/national-flag-germany.png">&nbsp;Germany</a></li>
+              <li><a href="#" style="color: black;"><img src="./img/language-flags/national-flag-france.jpg">&nbsp;France</a></li>
+              <li><a href="#" style="color: black;"><img src="./img/language-flags/national-flag-spain.png">&nbsp;Spain</a></li>
+              <li><a href="#" style="color: black;"><img src="./img/language-flags/national-flag-china.png">&nbsp;China</a></li>
+              <li><a href="#" style="color: black;"><img src="./img/language-flags/national-flag-arabic.jpg">&nbsp;Arabic</a></li>
+            </ul>
+          </li>
+
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -94,63 +212,36 @@
 
         <div class="carousel-inner" role="listbox">
 
-          <div class="carousel-item active" style="background-image: url('img/intro-carousel/intro-carousel.jpg');">
+          <div class="carousel-item active" style="background-image: url('img/intro-carousel/intro-carousel-1.jpg');">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>HASSLE FREE BUSINESS MADE SIMPLE WITH…
-                  THE GLOBAL PREMIER SHORT-STAY BUSINESS </h2><br>
-                  <h2>LET THE GLOBAL...</h2>
-                <a href="#" class="btn-get-started scrollto">LIST YOUR HOME</a>
-                <a href="#" class="btn-get-started scrollto">TRAVEL WITH US</a>
+                <h2>HASSLE-FREE HOSTING MADE EASY WITH…</h2><br>
+                  <h2>THE GLOBAL PREMIER SHORT-STAY BUSINESS</h2><br>
+                <a href="#" class="btn-get-started-button-group-1 scrollto button-part-1" >LIST YOUR PROPERTY</a>
+                <a href="#" class="btn-get-started-button-group-1 scrollto button-part-1" >TRAVEL WITH US</a>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item" style="background-image: url('img/intro-carousel/intro-carousel.jpg');">
+          <div class="carousel-item" style="background-image: url('img/intro-carousel/intro-carousel-2.jpg');">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>HASSLE FREE BUSINESS MADE SIMPLE WITH…
-                  THE GLOBAL PREMIER SHORT-STAY BUSINESS </h2><br>
-                  <h2>LET THE GLOBAL...</h2>
-                <a href="#" class="btn-get-started scrollto">LIST YOUR HOME</a>
-                <a href="#" class="btn-get-started scrollto">TRAVEL WITH US</a>
-              </div>
+                <h2>HASSLE-FREE HOSTING MADE EASY WITH…</h2><br>
+                  <h2>THE GLOBAL PREMIER SHORT-STAY BUSINESS</h2><br>
+                  <a href="#" class="btn-get-started-button-group-1 scrollto button-part-1" >LIST YOUR PROPERTY</a>
+                  <a href="#" class="btn-get-started-button-group-1 scrollto button-part-1" >TRAVEL WITH US</a>
+                </div>
             </div>
           </div>
 
-          <div class="carousel-item" style="background-image: url('img/intro-carousel/intro-carousel.jpg');">
+          <div class="carousel-item" style="background-image: url('img/intro-carousel/intro-carousel-3.jpg');">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>HASSLE FREE BUSINESS MADE SIMPLE WITH…
-                  THE GLOBAL PREMIER SHORT-STAY BUSINESS </h2><br>
-                  <h2>LET THE GLOBAL...</h2>
-                <a href="#" class="btn-get-started scrollto">LIST YOUR HOME</a>
-                <a href="#" class="btn-get-started scrollto">TRAVEL WITH US</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url('img/intro-carousel/intro-carousel.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>HASSLE FREE BUSINESS MADE SIMPLE WITH…
-                  THE GLOBAL PREMIER SHORT-STAY BUSINESS </h2><br>
-                  <h2>LET THE GLOBAL...</h2>
-                <a href="#" class="btn-get-started scrollto">LIST YOUR HOME</a>
-                <a href="#" class="btn-get-started scrollto">TRAVEL WITH US</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="carousel-item" style="background-image: url('img/intro-carousel/intro-carousel.jpg');">
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>HASSLE FREE BUSINESS MADE SIMPLE WITH…
-                  THE GLOBAL PREMIER SHORT-STAY BUSINESS </h2><br>
-                  <h2>LET THE GLOBAL...</h2>
-                <a href="#" class="btn-get-started scrollto">LIST YOUR HOME</a>
-                <a href="#" class="btn-get-started scrollto">TRAVEL WITH US</a>
-              </div>
+                <h2>HASSLE-FREE HOSTING MADE EASY WITH…</h2><br>
+                  <h2>THE GLOBAL PREMIER SHORT-STAY BUSINESS</h2><br>
+                  <a href="#" class="btn-get-started-button-group-1 scrollto button-part-1" >LIST YOUR PROPERTY</a>
+                  <a href="#" class="btn-get-started-button-group-1 scrollto button-part-1" >TRAVEL WITH US</a>
+                </div>
             </div>
           </div>
 
@@ -179,8 +270,10 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <h3>INTERNATIONAL SHORT-STAY EXPERTS</h3>
+          <p style="font-size: 20px;">BnBContinental operates as a global independent management service for Airbnb, HomeAway, Tripadvisor, Booking.com,
+            Expedia and a number of short-stay rental hosts and is not affiliated with any of them. Together with our <i style="font-weight: bold">Global City Partners</i>,
+            we deliver first class experience to all our guests across the world, leveraging on our international hosting experience backed by local knowledge. </p>
         </header>
 
         <div class="row about-cols">
@@ -188,40 +281,43 @@
           <div class="col-md-4 wow fadeInUp">
             <div class="about-col">
               <div class="img">
-                <img src="img/about-mission.jpg" alt="" class="img-fluid">
+                <img src="img/about-us-1.png" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <h2 class="title"><a href="#">GUEST EXPERIENCE</a></h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
+            <button type="button" class="btn btn-danger" style="margin-left: 30%;">FIND OUT MORE</button>
           </div>
 
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
             <div class="about-col">
               <div class="img">
-                <img src="img/about-plan.jpg" alt="" class="img-fluid">
+                <img src="img/about-us-2.png" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-list-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <h2 class="title"><a href="#">EXPERT HOSTING</a></h2>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
+            <button type="button" class="btn btn-danger" style="margin-left: 30%;">FIND OUT MORE</button>
           </div>
 
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
-                <img src="img/about-vision.jpg" alt="" class="img-fluid">
+                <img src="img/about-us-3.png" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-eye-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <h2 class="title"><a href="#">GLOBAL CITY PARTNERSHIPS</a></h2>
               <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
+            <button type="button" class="btn btn-danger" style="margin-left: 30%;">FIND OUT MORE</button>
           </div>
 
         </div>
@@ -236,7 +332,7 @@
       <div class="container">
 
         <header class="section-header wow fadeInUp">
-          <h3>WHAT BnBCONTINENTAL WILL DO FOR YOU</h3>
+          <h3>WHAT BNBCONTINENTAL WILL DO FOR YOU with</h3>
           <p></p>
         </header>
 
@@ -251,14 +347,14 @@
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
             <h4 class="title"><a href="">Marketing & Distribution</a></h4>
-            <p class="description">In addition to promoting your home to our extensive database of travelers, we list every property on top
-              websites like VRBO, Airbnb and TripAdvisor for free.</p>
+            <p class="description">Our team of industry experts will craft a fully optimized listing for your property - dynamic rates and free
+                professional photos included!</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-paper-outline"></i></div>
             <h4 class="title"><a href="">Inquiries & Reservations</a></h4>
-            <p class="description">Our in-house Travel Advisors respond to every inquiry and confirm reservations 7 days a week, ensuring a
-              streamlined booking experience for your guests.</p>
+            <p class="description">Our team of industry experts will craft a fully optimized listing for your property - dynamic rates and free
+                professional photos included!</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
@@ -269,14 +365,14 @@
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
             <h4 class="title"><a href="">Local Service Providers</a></h4>
-            <p class="description">Need help with on-the-ground services? Our extensive network of vetted local partners are available to help
-              with check-ins, housekeeping, maintenance and more.</p>
+            <p class="description">We manage all pre- and post-stay communication with travelers, including rental contracts, booking
+                confirmations, check-in instructions and review requests.</p>
           </div>
           <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="icon"><i class="ion-ios-people-outline"></i></div>
             <h4 class="title"><a href="">Peace of Mind</a></h4>
-            <p class="description">Every booking is protected by our industry-leading Property Protection Plus program with up to $3,000 in
-              damage protection and $1,000,000 in liability coverage.</p>
+            <p class="description">We manage all pre- and post-stay communication with travelers, including rental contracts, booking
+                confirmations, check-in instructions and review requests.</p>
           </div>
 
         </div>
@@ -285,35 +381,28 @@
     </section><!-- #services -->
 
     <!--==========================
-      Call To Action Section
+      Video explaining our services
     ============================-->
-    <section id="call-to-action" class="wow fadeIn">
-      <div class="container text-center">
-        <h3>A percentage of your total incomings.</h3>
-        <p>15% of net revenue</p>
-        <p>Simple commission structure. Flexible. Access to all of our management services.</p>
-        <a class="cta-btn" href="">Country</a>
-        <a class="cta-btn" href="">City</a>
-        <a class="cta-btn" href="">Select Area</a>
-        <a class="cta-btn" href="">Email Address</a>
-        <a class="cta-btn" href="">Bedrooms</a>
-        <a class="cta-btn" href="" style="background-color:red">Get Started</a>
-      </div>
-    </section><!-- #call-to-action -->
-    <section id="call-to-action" class="wow fadeIn">
-      <div class="container text-center">
-        <h3>Guaranteed Monthly Rent</h3>
-        <p>A set rate each month for peace of mind.</p>
-        <p>We are so sure that we can fill your property, we give you the option of receiving guaranteed monthly income.</p>
-        <a class="cta-btn" href="">Country</a>
-        <a class="cta-btn" href="">City</a>
-        <a class="cta-btn" href="">Select Area</a>
-        <a class="cta-btn" href="">Email Address</a>
-        <a class="cta-btn" href="">Bedrooms</a>
-        <a class="cta-btn" href="" style="background-color:red">Get Started</a>
-      </div>
-    </section><!-- #call-to-action -->
-
+		<section class="video-area-custom section-gap-custom relative" style="background-color: rgba(245, 32, 75, 0.75);">
+			<div class="overlay overlay-bg-custom"></div>
+			<div class="container-video-custom">
+				<div class="row">
+					<div class="col-lg-6 col-md-5">
+						<div class="video-wrap-custom" style="background: url(img/video-bg.jpg);">
+							<div class="overlay-bg-custom"></div>
+                <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn-custom"><img src="img/play-btn.png" alt=""></a>              
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-7">
+						<div class="video-content-custom">
+							<h1 class="text-white">RENTING OUT YOUR SECOND HOME SHOULDN'T BE A SECOND JOB.</h1>
+							<p class="text-white">NO COST TO JOIN NO TERM COMMITMENT LOW 10% BOOKING FEE</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+   
     <!--==========================
       Portfolio Section
     ============================-->
@@ -321,7 +410,7 @@
       <div class="container">
 
         <header class="section-header">
-          <h3 class="section-title">Rental House Service</h3>
+          <h3 class="section-title">TOP DESTINATIONS</h3>
         </header>
 
         <div class="row portfolio-container">
@@ -447,40 +536,7 @@
       </div>
     </section><!-- #testimonials -->
 
-    <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact" class="section-bg wow fadeInUp">
-      <div class="container">
-
-        <div class="section-header">
-          <h3>VACATION RENTAL MADE SIMPLE (Big Banner)</h3>
-        </div>
-
-        <div class="row contact-info">
-
-          <div class="col-md-4">
-            <h3>BOOK INSTANTLY</h3>
-            <p>Secure your reservation</p>
-            <p>immediately with a credit card.</p>
-          </div>
-          <div class="col-md-4">
-            <h3>VERIFIED RENTAL</h3>
-            <p>We verify every property so</p>
-            <p>you can book with confidence.</p>
-          </div>
-          <div class="col-md-4">
-            <h3>RAVELER SUPPORT</h3>
-            <p>Our team of Travel</p>
-            <p>Advisors are available 24/7</p>
-          </div>
-
-        </div>
-
-
-      </div>
-    </section><!-- #contact -->
-
+  
   </main>
 
   <!--==========================

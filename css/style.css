@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -263,6 +263,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #18d26e;
 }
 
+#intro .btn-get-started-button-group-1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: red;
+}
+
+#intro .btn-get-started-button-group-1:hover {
+  background: palevioletred;
+  color: #fff;
+}
+
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -355,6 +375,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu li:hover > a, .nav-menu > .menu-active > a {
   color: #18d26e;
+}
+
+.nav-menu > .menu-active-language > a {
+  color: #fa081c;
 }
 
 .nav-menu > li {
